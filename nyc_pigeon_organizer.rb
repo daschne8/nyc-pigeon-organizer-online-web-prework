@@ -54,6 +54,6 @@ def get_names_hash(data)
 end
 
 #names = get_names_hash(pigeons_data)
-nyc_pigeon_organizer(pigeons_data)
+pig_hash = nyc_pigeon_organizer(pigeons_data)
 binding.pry
 puts "over"
