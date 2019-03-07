@@ -39,6 +39,20 @@ def nyc_pigeon_organizer(data)
   end
 end
 
-nyc_pigeon_organizer(pigeons_data)
+def get_names(data)
+  name_hash = {}
+  data.each do |key1,value1|
+    value1.each do |key2,names|
+      names.each do |name|
+        name_hash[name] = {
+          :color => [],
+          :gender =>[],
+          :lives => []
+        }
+      end
+    end
+  end
+end
+#nyc_pigeon_organizer(pigeons_data)
 binding.pry
 puts "over"
