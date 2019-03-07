@@ -31,7 +31,7 @@ def nyc_pigeon_organizer(data)
   data.each do |cgl,cgl_data|
     cgl_data.each do |sub_cgl, names|
       names.each do |name|
-        names_hash[name][]
+        names_hash[name][cgl] << sub_cgl
       end
     end
   end
