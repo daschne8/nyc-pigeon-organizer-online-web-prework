@@ -39,7 +39,7 @@ def nyc_pigeon_organizer(data)
   end
 end
 
-def get_names(data)
+def get_names_hash(data)
   name_hash = {}
   data.each do |key1,value1|
     value1.each do |key2,names|
@@ -54,6 +54,8 @@ def get_names(data)
   end
   return name_hash
 end
+
+get_names_hash(pigeons_data)
 #nyc_pigeon_organizer(pigeons_data)
 binding.pry
 puts "over"
