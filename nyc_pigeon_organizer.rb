@@ -27,11 +27,11 @@ def nyc_pigeon_organizer(data)
   #   color  array
   #   gender array
   #   lives  array
-  new_hash = {}
+  names_hash = get_names_hash(data)
   data.each do |cgl,cgl_data|
     cgl_data.each do |sub_cgl, names|
       names.each do |name|
-        puts "derp"
+        names_hash[name][]
       end
     end
   end
