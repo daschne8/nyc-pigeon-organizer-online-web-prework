@@ -52,6 +52,7 @@ def get_names(data)
       end
     end
   end
+  return name_hash
 end
 #nyc_pigeon_organizer(pigeons_data)
 binding.pry
